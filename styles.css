@@ -6,16 +6,16 @@
 }
 
 :root {
-    --primary-purple: #2d1b69;
-    --secondary-purple: #4a2b8a;
+    --primary-purple: #695b1b;
+    --secondary-purple: #8a7c2b;
     --mint-green: #7fffd4;
     --light-mint: #b8f5e6;
-    --magenta: #ff00ff;
-    --light-magenta: #ff69b4;
+    --magenta: #ffd000;
+    --light-magenta: #ffd000;
     --white: #ffffff;
     --black: #000000;
-    --dark-bg: #1a0b2e;
-    --card-bg: rgba(45, 27, 105, 0.8);
+    --dark-bg: #2e290b;
+    --card-bg: rgba(105, 100, 27, 0.8);
     --glass-bg: rgba(255, 255, 255, 0.1);
 }
 
@@ -42,7 +42,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(26, 11, 46, 0.95);
+    background: rgba(46, 44, 11, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -158,7 +158,7 @@ html {
     height: 200px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 0 50px rgba(255, 0, 255, 0.5);
+    box-shadow: 0 0 50px rgba(255, 217, 0, 0.5);
     filter: drop-shadow(0 0 20px var(--magenta));
     margin-bottom: 1rem;
 }
@@ -171,7 +171,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(255, 0, 255, 0.8);
+    text-shadow: 0 0 30px rgba(255, 217, 0, 0.5);
     margin-bottom: 1rem;
 }
 
@@ -196,7 +196,7 @@ html {
     display: flex;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 15px 50px rgba(255, 0, 255, 0.6);
+    box-shadow: 0 15px 50px rgba(255, 217, 0, 0.5);
     border: 3px solid var(--white);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -206,13 +206,13 @@ html {
 
 .shake-ass-btn:hover {
     transform: scale(1.1) translateY(-10px);
-    box-shadow: 0 25px 60px rgba(255, 0, 255, 0.8);
+    box-shadow: 0 25px 60px rgba(255, 217, 0, 0.5);
     background: linear-gradient(45deg, var(--magenta), var(--mint-green));
 }
 
 .shake-ass-btn:active {
     transform: scale(0.95);
-    box-shadow: 0 10px 30px rgba(255, 0, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(255, 217, 0, 0.5);
 }
 
 .shake-ass-btn i {
@@ -308,7 +308,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, transparent 0%, rgba(26, 11, 46, 0.3) 100%);
+    background: radial-gradient(circle at center, transparent 0%, rgba(46, 42, 11, 0.3) 100%);
     z-index: 2;
     pointer-events: none;
 }
@@ -348,10 +348,10 @@ html {
 
 @keyframes pulse {
     0%, 100% {
-        box-shadow: 0 8px 32px rgba(255, 0, 255, 0.4);
+        box-shadow: 0 8px 32px rgba(255, 217, 0, 0.4);
     }
     50% {
-        box-shadow: 0 8px 32px rgba(255, 0, 255, 0.8), 0 0 30px rgba(255, 0, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(255, 217, 0, 0.8), 0 0 30px rgba(255, 208, 0, 0.3);
     }
 }
 
@@ -440,7 +440,7 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-shadow: 0 0 30px rgba(255, 0, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 30px rgba(255, 217, 0, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.8);
     position: relative;
     z-index: 3;
 }
@@ -475,11 +475,11 @@ html {
 
 .stat {
     text-align: center;
-    background: rgba(26, 11, 46, 0.8);
+    background: rgba(46, 44, 11, 0.8);
     backdrop-filter: blur(10px);
     padding: 1rem 1.5rem;
     border-radius: 15px;
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(255, 238, 0, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -489,7 +489,7 @@ html {
     font-weight: 900;
     color: var(--magenta);
     font-family: 'Orbitron', monospace;
-    text-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
+    text-shadow: 0 0 15px rgba(255, 217, 0, 0.5);
 }
 
 .stat-label {
@@ -509,11 +509,11 @@ html {
     font-size: 2rem;
     animation: bounce 2s infinite;
     z-index: 3;
-    background: rgba(26, 11, 46, 0.8);
+    background: rgba(46, 42, 11, 0.8);
     backdrop-filter: blur(10px);
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(255, 217, 0, 0.3);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -569,7 +569,7 @@ section:hover {
 .tokenomics-card {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(251, 255, 0, 0.3);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -585,7 +585,7 @@ section:hover {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 0, 255, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 251, 0, 0.2), transparent);
     transition: left 0.5s;
 }
 
@@ -595,7 +595,7 @@ section:hover {
 
 .tokenomics-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 238, 0, 0.3);
 }
 
 .card-icon {
@@ -685,8 +685,8 @@ section:hover {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 238, 0, 0.4);
     animation: float 4s ease-in-out infinite;
 }
 
@@ -730,7 +730,7 @@ section:hover {
 .social-card {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(255, 230, 0, 0.3);
     border-radius: 20px;
     padding: 2rem;
     text-align: center;
@@ -760,7 +760,7 @@ section:hover {
 
 .social-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 230, 0, 0.3);
 }
 
 .social-card i {
@@ -817,7 +817,7 @@ section:hover {
 .roadmap-phase {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(255, 230, 0, 0.3);
     border-radius: 20px;
     padding: 2rem;
     position: relative;
@@ -826,7 +826,7 @@ section:hover {
 
 .roadmap-phase:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(255, 0, 255, 0.3);
+    box-shadow: 0 20px 40px rgba(255, 208, 0, 0.3);
 }
 
 .roadmap-phase h3 {
@@ -854,7 +854,7 @@ section:hover {
 }
 
 .roadmap-phase li::before {
-    content: '🍑';
+    content: '💩';
     position: absolute;
     left: 0;
     top: 0.5rem;
@@ -953,7 +953,7 @@ section:hover {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 0, 255, 0.3);
+    border-top: 1px solid rgba(255, 230, 0, 0.3);
     padding-top: 20px;
 }
 
@@ -977,7 +977,7 @@ section:hover {
     width: 40px;
     height: 40px;
     background: var(--card-bg);
-    border: 1px solid rgba(255, 0, 255, 0.3);
+    border: 1px solid rgba(255, 208, 0, 0.3);
     border-radius: 50%;
     display: flex;
     align-items: center;

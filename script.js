@@ -49,10 +49,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(26, 11, 46, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(255, 0, 255, 0.3)';
+        navbar.style.background = 'rgba(46, 39, 11, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(255, 217, 0, 0.3)';
     } else {
-        navbar.style.background = 'rgba(26, 11, 46, 0.95)';
+        navbar.style.background = 'rgba(45, 46, 11, 0.95)';
         navbar.style.boxShadow = 'none';
     }
 });
@@ -134,7 +134,7 @@ function createParticle() {
     particle.style.position = 'absolute';
     particle.style.width = '2px';
     particle.style.height = '2px';
-    particle.style.background = '#ff00ff';
+    particle.style.background = '#ffe600ff';
     particle.style.borderRadius = '50%';
     particle.style.pointerEvents = 'none';
     particle.style.opacity = '0.6';
@@ -226,7 +226,7 @@ const counterObserver = new IntersectionObserver((entries) => {
                 animateCounter(target, 69000000);
             } else if (text.includes('$ASS')) {
                 // Don't animate text, just add glow effect
-                target.style.textShadow = '0 0 20px #ff00ff';
+                target.style.textShadow = '0 0 20px #ffe600ff';
             }
             
             counterObserver.unobserve(target);
@@ -246,9 +246,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroImage = document.querySelector('.hero-image');
     if (heroImage) {
         setInterval(() => {
-            heroImage.style.filter = 'drop-shadow(0 0 30px #ff00ff)';
+            heroImage.style.filter = 'drop-shadow(0 0 30px #ffe600ff)';
             setTimeout(() => {
-                heroImage.style.filter = 'drop-shadow(0 0 20px #ff00ff)';
+                heroImage.style.filter = 'drop-shadow(0 0 20px #ffe600ff)';
             }, 500);
         }, 3000);
     }
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create slap effect
         const slapEffect = document.createElement('div');
         slapEffect.className = 'slap-effect';
-        slapEffect.innerHTML = '👋';
+        slapEffect.innerHTML = '💩';
         slapEffect.style.left = event.clientX + 'px';
         slapEffect.style.top = event.clientY + 'px';
         slapEffect.style.transform = 'translate(-50%, -50%)';
